@@ -1,0 +1,20 @@
+Package: smartshiny
+Title: Build an RShiny App from SMART Data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Joseph",
+           family = "Nguyen",
+           role = c("aut", "cre"),
+           email = "jdnguyen@email.wm.edu")
+Description: The smartshiny package interfaces with the SMART package by Michelle Jin, which is used in conjunction with the wholebrain package by Daniel Furth to process whole brain imaging datasets. This package is used to produce an RShiny app from the output data from the SMART package. The applet production pipeline consists of four parts, as outlined in the online tutorial. The first two parts contain new functions, as described below.
+License: GPL-3
+Imports:
+  SMART (>= 0.1.0)
+  shiny (>= 1.3.2)
+  shinydashboard (>= 0.7.1)
+  rsconnect (>= 0.8.13)
+  shinyjs (>= 1.0)
+  shinyBS (>= 0.61)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
