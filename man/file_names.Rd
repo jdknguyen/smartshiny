@@ -2,7 +2,7 @@
 % Please edit documentation in R/file_names.R
 \name{file_names}
 \alias{file_names}
-\title{Generate a list of file names for images output by SMART.}
+\title{Generate a list of file names for SMART images.}
 \usage{
 file_names(shiny_setup)
 }
@@ -12,13 +12,15 @@ during the \code{\link[=shiny_setup]{shiny_setup()}} function.}
 }
 \value{
 Returns \emph{file_names}, a list of length 4 containing
-the following information: registration filenames, segmentation
-filenames, forward warp filenames, and plate numbers.
+the following information: registration file names, segmentation
+file names, forward warp file names, and atlas plate numbers.
 }
 \description{
 Generates list of length 4 to store file names of
-registration, segmentation, and forward warp images. These names
+registration, segmentation, and forward warp images. Atlas plate
+numbers of the relevant plates are also stored. These names
 will be accessed downstream in the pipeline, including by future
-functions and by the applet itself. This function requires that
-the user has not modified the names of image files output by SMART.
+functions and by sliders in the applet itself. This function
+requires that the user has not modified the names of image files
+output by SMART.
 }

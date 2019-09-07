@@ -23,6 +23,6 @@ file is saved in the shiny output folder, and is directly used by the
 applet.
 }
 \details{
-The new .RData file is automatically created in the shiny
+The new .RData file is automatically created in the RShiny
 output folder.
 }

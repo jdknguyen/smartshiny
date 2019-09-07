@@ -5,27 +5,22 @@
 \title{Generate a list of parameters and file directory for the
 applet and related files.}
 \usage{
-shiny_setup(filename, setup, output_folder)
+shiny_setup(setup, output_folder)
 }
 \arguments{
-\item{filename}{(required) The most recently saved .RData file
-produced by SMART. It will be found in the R_data folder.}
-
 \item{setup}{(required) The setup variable produced during the
 \code{\link[=setup_pl]{setup_pl()}} function.}
 
 \item{output_folder}{(required) The output folder that will
-contain all files required for the applet. The user must create
-this folder prior to running the function, since the function
+contain all files required for the applet. The function
 will create subfolders within \emph{output_folder}.}
 }
 \value{
 Returns \emph{shiny_setup}, a list containing the following
-information: .RData file name, setup variable, output folder,
-and output subfolders.
+information: setup variable, output folder, and output subfolders.
 }
 \description{
-Generates setup list of length 5 to store
+Generates setup list of length 3 to store
 parameters for building an RShiny applet, and produces subfolders
 within the user-specified output folder to store applet content.
 To change any user-specified parameters, run \code{\link[=shiny_setup]{shiny_setup()}}

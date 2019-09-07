@@ -2,7 +2,7 @@
 % Please edit documentation in R/image_conversion.R
 \name{image_conversion}
 \alias{image_conversion}
-\title{Convert .tif files to .png to conserve server space.}
+\title{Convert .tif files to .png files to conserve server space.}
 \usage{
 image_conversion(shiny_setup, file_names)
 }
@@ -23,6 +23,7 @@ output directories, and the temporary directories created by
 \details{
 Files are automatically copied to the temporary
 directories. The original registration image files are
-retained, but the copied segmentation and forward warp images
-are deleted along with their temporary directories.
+retained, but the .tif segmentation and forward warp images
+are deleted along with their temporary directories. All
+images in the SMART output folder are kept intact.
 }

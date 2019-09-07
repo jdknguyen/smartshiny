@@ -18,9 +18,12 @@ during the \code{\link[=file_names]{file_names()}} function.}
 Copies one segmentation image and one forward warp
 image per atlas plate from the SMART output folder (indicated
 by the \emph{setup} variable) to the temporary directories in the
-applet output folder.
+applet output folder. Because most whole brain datasets
+contain thousands of segmentation and forward warp images, only
+one of each, per atlas plate, will be displayed in the applet.
 }
 \details{
-Files are automatically copied to the temporary
-directories. The original image files are retained.
+Files are automatically copied from the SMART output
+folder to the temporary directories. The original image files
+are kept intact.
 }
