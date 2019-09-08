@@ -19,8 +19,8 @@ the \code{\link[=forward_warp]{forward_warp()}} function.}
 \description{
 Produces a sunburst plot and data table, and stores them
 with \emph{file_names} in an .RData file called full_data.R. This .RData
-file is saved in the shiny output folder, and is directly used by the
-applet.
+file is saved in the shiny output folder, and it is directly used by
+the applet.
 }
 \details{
 The new .RData file is automatically created in the RShiny
